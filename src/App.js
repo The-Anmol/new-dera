@@ -6,7 +6,7 @@ import Nav from './Components/Nav' ;
 import Admin from './Pages/Admin' ;
 import Protected from './Components/Protected';
 import Form from './Pages/Form' ;
-import Edit from './Pages/Form' ;
+import Edit from './Pages/Edit' ;
 
 function App() {
   return (
