@@ -1,0 +1,64 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.focused{
+    opacity: 1;
+    bottom: 0;
+    left: 0;
+}
+    :root{
+        --white:white;
+        --black:black;
+        --body: white;
+        --blue-900: #1e3a8a;
+        --blue-700: #3b82f6;
+         --gray-50: #f9fafb;
+        --gray-100: #f3f4f6;
+        --gray-200: #e5e7eb;
+        --gray-300: #d1d5db;
+        --gray-400: #9ca3af;
+        --gray-500: #6b7280;
+        --gray-600: #4b5563;
+        --gray-700: #374151;
+        --gray-800: #1f2937;
+        --gray-900: #111827;
+}
+.page{
+    background-color: var(--gray-100);
+}
+.body{
+    background-color: var(--body);
+}
+.logo{
+    color: var(--gray-900);
+}
+.inputs{
+    border: solid 1px var(--gray-200);
+    border-radius: 5px;
+}
+.btns{
+    background-color: var(--blue-700);
+    color: var(--white);
+}
+.links{
+    color: var(--blue-900);
+}
+.links:hover{
+    text-decoration: underline;
+}
+.stepper-line, .steps{
+    background-color: var(--blue-700);
+}
+.steps:nth-child(1)::after{
+    content: "Account Login";
+    width: 250px;
+    position: relative;
+    top: 20px;
+}
+.steps:nth-child(2)::after{
+    content: "Form Fillup";
+    width: 300px;
+    position: relative;
+    top: 20px;
+}
