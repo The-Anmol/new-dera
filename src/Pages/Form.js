@@ -93,13 +93,13 @@ const Form = () => {
             <form action="#" className="flex flex-col space-y-5">
               {/* Name */}
               <div className="flex flex-col space-y-1">
-                <label htmlFor="name" className="text-sm font-semibold text-gray-500 readOnly required">Name</label>
+                <label htmlFor="name" className="text-sm font-semibold   readOnly required">Name</label>
                 <input type="text" id="name" className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200" />
               </div>
               {/* Age */}
               <div className="flex flex-col space-y-1">
                 <div className="flex items-center justify-between">
-                  <label htmlFor="age" className="text-sm font-semibold text-gray-500 required">Age</label>
+                  <label htmlFor="age" className="text-sm font-semibold   required">Age</label>
                 </div>
                 <input type="number" id="age" className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
                 />
@@ -108,7 +108,7 @@ const Form = () => {
               <span className='flex justify-around'>
                 {/* Gender */}
                 <div className="flex flex-col space-y-1">
-                  <label htmlFor="name" className="text-sm font-semibold text-gray-500 required">Gender</label>
+                  <label htmlFor="name" className="text-sm font-semibold   required">Gender</label>
                   {/* DropDown Begins */}
                   <div className="relative inline-block dropdown w-fit ">
                     <button className="inline-flex items-center px-4 py-2 font-semibold text-gray-700 bg-gray-300 rounded">
@@ -117,18 +117,18 @@ const Form = () => {
                     </button>
                     <ul className="absolute hidden pt-1 text-gray-700 dropdown-menu">
                       <li className="">
-                        <button className="block px-4 py-2 whitespace-no-wrap bg-gray-200 rounded-t hover:bg-gray-400" >Male</button></li>
+                        <button className="block w-max px-4 py-2 whitespace-no-wrap bg-gray-200 rounded-t hover:bg-gray-400" >Male</button></li>
                       <li className="">
-                        <button className="block px-4 py-2 whitespace-no-wrap bg-gray-200 hover:bg-gray-400" >Female</button></li>
+                        <button className="block w-max px-4 py-2 whitespace-no-wrap bg-gray-200 hover:bg-gray-400" >Female</button></li>
                       <li className="">
-                        <button className="block px-4 py-2 whitespace-no-wrap bg-gray-200 rounded-b hover:bg-gray-400" >Other</button></li>
+                        <button className="block  w-maxpx-4 py-2 whitespace-no-wrap bg-gray-200 rounded-b hover:bg-gray-400" >Other</button></li>
                     </ul>
                   </div>
                   {/* DropDown Ends */}
                 </div>
                 <div className="flex flex-col space-y-1">
                   <div className="flex items-center justify-between">
-                    <label htmlFor="password" className="text-sm font-semibold text-gray-500 required">Maritial Status</label>
+                    <label htmlFor="password" className="text-sm font-semibold   required">Maritial Status</label>
                   </div>
                   <div className="relative inline-block dropdown w-fit ">
                     <button className="inline-flex items-center px-4 py-2 font-semibold text-gray-700 bg-gray-300 rounded">
@@ -146,7 +146,7 @@ const Form = () => {
               </span>
               {/* Phone Number Calling */}
               <div className="flex flex-col space-y-1">
-                <label htmlFor="phone-number" className="text-sm font-semibold text-gray-500 required">Phone Number ( Calling )</label>
+                <label htmlFor="phone-number" className="text-sm font-semibold   required">Phone Number ( Calling )</label>
                 <input
                   type="number"
                   id="phone-call"
@@ -156,7 +156,7 @@ const Form = () => {
               </div>
               {/* Phone Number Whatsapp */}
               <div className="flex flex-col space-y-1">
-                <label htmlFor="phone-number" className="text-sm font-semibold text-gray-500">Phone Number ( Whatsapp )</label>
+                <label htmlFor="phone-number" className="text-sm font-semibold  ">Phone Number ( Whatsapp )</label>
                 <input
                   type="number"
                   id="phone-whatsapp"
@@ -165,7 +165,7 @@ const Form = () => {
               </div>
               {/* Email*/}
               <div className="flex flex-col space-y-1">
-                <label htmlFor="email" className="text-sm font-semibold text-gray-500">Email address</label>
+                <label htmlFor="email" className="text-sm font-semibold  ">Email address</label>
                 <input
                   type="email"
                   id="email"
@@ -175,7 +175,7 @@ const Form = () => {
               {/* Address */}
               <div className="flex flex-col space-y-1">
                 <div className="flex items-center justify-between">
-                  <label htmlFor="address" className="text-sm font-semibold text-gray-500 required">Address</label>
+                  <label htmlFor="address" className="text-sm font-semibold   required">Address</label>
                 </div>
                 <input
                   type="text"
@@ -186,7 +186,7 @@ const Form = () => {
               </div>
               {/* City */}
               <div className="flex flex-col space-y-1">
-                <label htmlFor="city" className="text-sm font-semibold text-gray-500 required">City</label>
+                <label htmlFor="city" className="text-sm font-semibold   required">City</label>
                 <input
                   type="text"
                   id="city"
@@ -196,7 +196,7 @@ const Form = () => {
               </div>
               {/* State */}
               <div className="flex flex-col space-y-1">
-                <label htmlFor="state" className="text-sm font-semibold text-gray-500 required">City</label>
+                <label htmlFor="state" className="text-sm font-semibold   required">City</label>
                 <input
                   type="text"
                   id="state"
@@ -206,7 +206,7 @@ const Form = () => {
               </div>
               {/* Country */}
               <div className="flex flex-col space-y-1">
-                <label htmlFor="country" className="text-sm font-semibold text-gray-500 required">Country</label>
+                <label htmlFor="country" className="text-sm font-semibold   required">Country</label>
                 <input
                   type="text"
                   id="country"
@@ -241,7 +241,7 @@ const Form = () => {
             <form action="#" className="flex flex-col space-y-5">
               {/* Name of the institute */}
               <div className="flex flex-col space-y-1">
-                <label htmlFor="name" className="text-sm font-semibold text-gray-500 required">Name of the institute</label>
+                <label htmlFor="name" className="text-sm font-semibold   required">Name of the institute</label>
                 <input
                   type="text"
                   id="institute-name"
@@ -253,7 +253,7 @@ const Form = () => {
               {/* Course you were enrolled in */}
               <div className="flex flex-col space-y-1">
                 <div className="flex items-center justify-between">
-                  <label htmlFor="course" className="text-sm font-semibold text-gray-500 required">Course you were enrolled in</label>
+                  <label htmlFor="course" className="text-sm font-semibold   required">Course you were enrolled in</label>
                 </div>
                 <input
                   type="text"
@@ -265,7 +265,7 @@ const Form = () => {
               </div>
               {/* Duration during which you studied at a institute (specify the number of years, or months.) */}
               <div className="flex flex-col space-y-1">
-                <label htmlFor="course-duration" className="text-sm font-semibold text-gray-500 required">Duration during which you studied at a institute (specify the number of years, or months.)</label>
+                <label htmlFor="course-duration" className="text-sm font-semibold   required">Duration during which you studied at a institute (specify the number of years, or months.)</label>
                 <input
                   type="text"
                   id="course-duration"
@@ -276,7 +276,7 @@ const Form = () => {
               </div>
               {/* Admission number (at the institute, if you don't remember, leave blank.) */}
               <div className="flex flex-col space-y-1">
-                <label htmlFor="admission-number" className="text-sm font-semibold text-gray-500">Admission number (at the institute, if you don't remember, leave blank.)</label>
+                <label htmlFor="admission-number" className="text-sm font-semibold  ">Admission number (at the institute, if you don't remember, leave blank.)</label>
                 <input
                   type="number"
                   id="admission-number"
@@ -311,28 +311,28 @@ const Form = () => {
             <form action="#" className="flex flex-col space-y-5">
               {/* What most accurately describes your current position? */}
               <div className="flex flex-col space-y-1">
-                <label htmlFor="name" className="text-sm font-semibold text-gray-500 required">What most accurately describes your current position?</label>
+                <label htmlFor="name" className="text-sm font-semibold   required">What most accurately describes your current position?</label>
                 <div className="flex flex-col gap-2 ">
                   <span>
                     <input type="radio" id="position-job" required className="px-4 py-2 mr-2 transition duration-300 border border-gray-300 rounded w-fit focus:border-transparent focus:outline-none focus:ring-blue-200" />
-                    <label className="text-sm font-semibold text-gray-500 ">Job</label>
+                    <label className="text-sm font-semibold   ">Job</label>
                   </span>
                   <span>
                     <input type="radio" id="position-student" required className="px-4 py-2 mr-2 transition duration-300 border border-gray-300 rounded w-fit focus:border-transparent focus:outline-none focus:ring-blue-200" />
-                    <label className="text-sm font-semibold text-gray-500 ">Student</label>
+                    <label className="text-sm font-semibold   ">Student</label>
                   </span>
                   <span>
                     <input type="radio" id="position-bussiness" required className="px-4 py-2 mr-2 transition duration-300 border border-gray-300 rounded w-fit focus:border-transparent focus:outline-none focus:ring-blue-200" />
-                    <label className="text-sm font-semibold text-gray-500 ">Businness</label>
+                    <label className="text-sm font-semibold   ">Businness</label>
                   </span>
                   <span>
                     <input type="radio" id="position-unemployed" required className="px-4 py-2 mr-2 transition duration-300 border border-gray-300 rounded w-fit focus:border-transparent focus:outline-none focus:ring-blue-200" />
-                    <label className="text-sm font-semibold text-gray-500 ">Unemployed</label>
+                    <label className="text-sm font-semibold   ">Unemployed</label>
                   </span>
                   <span className='flex gap-20 align-center'>
                     <span >
                       <input type="radio" id="position-other" required className="px-4 py-2 mr-2 transition duration-300 border border-gray-300 rounded w-fit focus:border-transparent focus:outline-none focus:ring-blue-200" />
-                      <label className="text-sm font-semibold text-gray-500 ">Other</label>
+                      <label className="text-sm font-semibold   ">Other</label>
                     </span>
                     <input type="number" id="position-other-value" required className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200" />
                   </span>
@@ -342,7 +342,7 @@ const Form = () => {
               <span className='flex justify-around space-y-2'>
                 {/* What is your Job Type? */}
                 <div className="flex flex-col space-y-1">
-                  <label htmlFor="name" className="text-sm font-semibold text-gray-500 required">What is your Job Type?</label>
+                  <label htmlFor="name" className="text-sm font-semibold   required">What is your Job Type?</label>
                   {/* DropDown Begins */}
                   <div className="relative inline-block dropdown w-fit ">
                     <button className="inline-flex items-center px-4 py-2 font-semibold text-gray-700 bg-gray-300 rounded">
@@ -364,7 +364,7 @@ const Form = () => {
                 </div>
                 {/* What is your Job Sector? */}
                 <div className="flex flex-col space-y-1">
-                  <label htmlFor="name" className="text-sm font-semibold text-gray-500 required">What is your Job Sector?</label>
+                  <label htmlFor="name" className="text-sm font-semibold   required">What is your Job Sector?</label>
                   {/* DropDown Begins */}
                   <div className="relative inline-block dropdown w-fit ">
                     <button className="inline-flex items-center px-4 py-2 font-semibold text-gray-700 bg-gray-300 rounded">
@@ -445,7 +445,7 @@ const Form = () => {
               </span>
               {/* If Others, Please specify (Please specifically mention if you're working in a government organization or anything not in the list) */}
               <div className="flex flex-col space-y-1">
-                <label htmlFor="phone-number" className="text-sm font-semibold text-gray-500 required">If Others, Please specify (Please specifically mention if you're working in a government organization or anything not in the list)</label>
+                <label htmlFor="phone-number" className="text-sm font-semibold   required">If Others, Please specify (Please specifically mention if you're working in a government organization or anything not in the list)</label>
                 <input
                   type="text"
                   id="other-job-sector"
@@ -456,7 +456,7 @@ const Form = () => {
               </div>
               {/* Job Domain */}
               <div className="flex flex-col space-y-1">
-                <label htmlFor="name" className="text-sm font-semibold text-gray-500 required">What is your Job Domain?</label>
+                <label htmlFor="name" className="text-sm font-semibold   required">What is your Job Domain?</label>
                 {/* DropDown Begins */}
                 <div className="relative inline-block dropdown w-fit ">
                   <button className="inline-flex items-center px-4 py-2 font-semibold text-gray-700 bg-gray-300 rounded">
@@ -492,7 +492,7 @@ const Form = () => {
               </div>
               {/* If Others, Please specify here*/}
               <div className="flex flex-col space-y-1">
-                <label htmlFor="other-job-domain-label" className="text-sm font-semibold text-gray-500">If Others, Please specify here</label>
+                <label htmlFor="other-job-domain-label" className="text-sm font-semibold  ">If Others, Please specify here</label>
                 <input
                   type="text"
                   name="other-job-domain-input"
@@ -503,7 +503,7 @@ const Form = () => {
               {/* Designation */}
               <div className="flex flex-col space-y-1">
                 <div className="flex items-center justify-between">
-                  <label htmlFor="designation" className="text-sm font-semibold text-gray-500 required">Designation</label>
+                  <label htmlFor="designation" className="text-sm font-semibold   required">Designation</label>
                 </div>
                 <input
                   type="text"
@@ -516,7 +516,7 @@ const Form = () => {
               {/* Department */}
               <div className="flex flex-col space-y-1">
                 <div className="flex items-center justify-between">
-                  <label htmlFor="department" className="text-sm font-semibold text-gray-500 required">Department</label>
+                  <label htmlFor="department" className="text-sm font-semibold   required">Department</label>
                 </div>
                 <input
                   type="text"
@@ -529,7 +529,7 @@ const Form = () => {
               {/* Company/Firm/Organization */}
               <div className="flex flex-col space-y-1">
                 <div className="flex items-center justify-between">
-                  <label htmlFor="company" className="text-sm font-semibold text-gray-500 required">Company/Firm/Organization</label>
+                  <label htmlFor="company" className="text-sm font-semibold   required">Company/Firm/Organization</label>
                 </div>
                 <input
                   type="text"
@@ -542,7 +542,7 @@ const Form = () => {
               {/* City where you're working */}
               <div className="flex flex-col space-y-1">
                 <div className="flex items-center justify-between">
-                  <label htmlFor="working-city" className="text-sm font-semibold text-gray-500 required">City where you're working</label>
+                  <label htmlFor="working-city" className="text-sm font-semibold   required">City where you're working</label>
                 </div>
                 <input
                   type="text"
@@ -555,7 +555,7 @@ const Form = () => {
               {/* State where you're working */}
               <div className="flex flex-col space-y-1">
                 <div className="flex items-center justify-between">
-                  <label htmlFor="working-state" className="text-sm font-semibold text-gray-500 required">State where you're working</label>
+                  <label htmlFor="working-state" className="text-sm font-semibold   required">State where you're working</label>
                 </div>
                 <input
                   type="text"
@@ -568,7 +568,7 @@ const Form = () => {
               {/* Country where you're working */}
               <div className="flex flex-col space-y-1">
                 <div className="flex items-center justify-between">
-                  <label htmlFor="working-country" className="text-sm font-semibold text-gray-500 required">Country where you're working</label>
+                  <label htmlFor="working-country" className="text-sm font-semibold   required">Country where you're working</label>
                 </div>
                 <input
                   type="text"
@@ -581,7 +581,7 @@ const Form = () => {
               {/* Experience (in Years and months) */}
               <div className="flex flex-col space-y-1">
                 <div className="flex items-center justify-between">
-                  <label htmlFor="working-experience" className="text-sm font-semibold text-gray-500 required">Experience (in Years and months)</label>
+                  <label htmlFor="working-experience" className="text-sm font-semibold   required">Experience (in Years and months)</label>
                 </div>
                 <input
                   type="text"
@@ -619,7 +619,7 @@ const Form = () => {
             <form action="#" className="flex flex-col space-y-5">
               {/* Qualifications Completed (Degrees, Diplomas etc.) */}
               <div className="flex flex-col space-y-1">
-                <label htmlFor="  " className="text-sm font-semibold text-gray-500 required">Qualifications Completed (Degrees, Diplomas etc.)</label>
+                <label htmlFor="  " className="text-sm font-semibold   required">Qualifications Completed (Degrees, Diplomas etc.)</label>
                 <input
                   type="text"
                   id="qualifications-completed"
@@ -631,7 +631,7 @@ const Form = () => {
               {/* Institute where you completed your most recent qualification from */}
               <div className="flex flex-col space-y-1">
                 <div className="flex items-center justify-between">
-                  <label htmlFor="qualifications-completed-institute" className="text-sm font-semibold text-gray-500 required">Institute where you completed your most recent qualification from</label>
+                  <label htmlFor="qualifications-completed-institute" className="text-sm font-semibold   required">Institute where you completed your most recent qualification from</label>
                 </div>
                 <input
                   type="text"
@@ -668,7 +668,7 @@ const Form = () => {
             <form action="" className="flex flex-col space-y-5">
               {/* Which degree /diploma program are you currently enrolled in? */}
               <div className="flex flex-col space-y-1">
-                <label htmlFor="ongoing-course" className="text-sm font-semibold text-gray-500 ">Which degree /diploma program are you currently enrolled in?</label>
+                <label htmlFor="ongoing-course" className="text-sm font-semibold   ">Which degree /diploma program are you currently enrolled in?</label>
                 <input
                   type="text"
                   id="ongoing-course"
@@ -679,7 +679,7 @@ const Form = () => {
               {/* Area of Study */}
               <div className="flex flex-col space-y-1">
                 <div className="flex items-center justify-between">
-                  <label htmlFor="area-study" className="text-sm font-semibold text-gray-500 ">Area of Study</label>
+                  <label htmlFor="area-study" className="text-sm font-semibold   ">Area of Study</label>
                 </div>
                 <input
                   type="text"
@@ -691,7 +691,7 @@ const Form = () => {
               {/* Institution/University currently enrolled at. */}
               <div className="flex flex-col space-y-1">
                 <div className="flex items-center justify-between">
-                  <label htmlFor="currently-enrolled-institute" className="text-sm font-semibold text-gray-500 ">Institution/University currently enrolled at.</label>
+                  <label htmlFor="currently-enrolled-institute" className="text-sm font-semibold   ">Institution/University currently enrolled at.</label>
                 </div>
                 <input
                   type="text"
@@ -728,7 +728,7 @@ const Form = () => {
               {/* Your skills, areas of expertise (that you could aid in.) */}
               <div className="flex flex-col space-y-1">
                 <div className="flex items-center justify-between">
-                  <label htmlFor="skills" className="text-sm font-semibold text-gray-500 required">Your skills, areas of expertise (that you could aid in.)</label>
+                  <label htmlFor="skills" className="text-sm font-semibold   required">Your skills, areas of expertise (that you could aid in.)</label>
                 </div>
                 <input
                   type="text"
@@ -740,21 +740,21 @@ const Form = () => {
               </div>
               {/* Are you already a member of any pakki sammitti/sewa group? */}
               <div className="flex flex-col space-y-1">
-                <label htmlFor="name" className="text-sm font-semibold text-gray-500 required">Are you already a member of any pakki sammitti/sewa group?</label>
+                <label htmlFor="name" className="text-sm font-semibold   required">Are you already a member of any pakki sammitti/sewa group?</label>
                 <div className="flex flex-col gap-2 ">
                   <span>
                     <input type="radio" name="sewa-member-yes" required className="px-4 py-2 mr-2 transition duration-300 border border-gray-300 rounded w-fit focus:border-transparent focus:outline-none focus:ring-blue-200" />
-                    <label className="text-sm font-semibold text-gray-500 ">Yes</label>
+                    <label className="text-sm font-semibold   ">Yes</label>
                   </span>
                   <span>
                     <input type="radio" name="sewa-member-no" required className="px-4 py-2 mr-2 transition duration-300 border border-gray-300 rounded w-fit focus:border-transparent focus:outline-none focus:ring-blue-200" />
-                    <label className="text-sm font-semibold text-gray-500 ">No</label>
+                    <label className="text-sm font-semibold   ">No</label>
                   </span>
                 </div>
               </div>
               {/* Any other information you want to share! (For eg. Achievements, Research experience, Sports or other awards) */}
               <div className="flex flex-col space-y-1">
-                <label htmlFor="another-info" className="text-sm font-semibold text-gray-500 required">Any other information you want to share! (For eg. Achievements, Research experience, Sports or other awards)</label>
+                <label htmlFor="another-info" className="text-sm font-semibold   required">Any other information you want to share! (For eg. Achievements, Research experience, Sports or other awards)</label>
                 <input
                   type="text"
                   id="another-info"
@@ -765,7 +765,7 @@ const Form = () => {
               </div>
               {/* Link to your CV/Resume/Portfolio etc. (only if you wish to. You can upload on Google Drive and share the link!) */}
               <div className="flex flex-col space-y-1">
-                <label htmlFor="resume-link-label" className="text-sm font-semibold text-gray-500">Link to your CV/Resume/Portfolio etc. (only if you wish to. You can upload on Google Drive and share the link!)
+                <label htmlFor="resume-link-label" className="text-sm font-semibold  ">Link to your CV/Resume/Portfolio etc. (only if you wish to. You can upload on Google Drive and share the link!)
                 </label>
                 <input
                   type="text"
@@ -777,7 +777,7 @@ const Form = () => {
               {/* Suggestions for Dera/Sewa (that could be implemented) */}
               <div className="flex flex-col space-y-1">
                 <div className="flex items-center justify-between">
-                  <label htmlFor="suggestion" className="text-sm font-semibold text-gray-500 required">Suggestions for Dera/Sewa (that could be implemented)</label>
+                  <label htmlFor="suggestion" className="text-sm font-semibold   required">Suggestions for Dera/Sewa (that could be implemented)</label>
                 </div>
                 <input type="text" id="suggestion" required className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200" />
               </div>

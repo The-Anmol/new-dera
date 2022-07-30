@@ -1,17 +1,17 @@
-import React ,{ useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 const Login = () => {
 
-    const navigate = useNavigate() ;
+    const navigate = useNavigate();
 
-    const login = () =>{
-        localStorage.setItem("login",true); 
+    const login = () => {
+        localStorage.setItem("login", true);
         navigate("/form")
     }
 
-    useEffect( ()=>{
+    useEffect(() => {
         const login = localStorage.getItem("login");
-        if(login){
+        if (login) {
             navigate("/form")
         }
     })
@@ -24,7 +24,7 @@ const Login = () => {
         <>
             <div className="flex items-center min-h-screen p-4 bg-gray-100 lg:justify-center">
                 <div className="flex flex-col overflow-hidden bg-white rounded-md shadow-lg max md:flex-row md:flex-1 lg:max-w-screen-md">
-                    <div className="p-4 py-6 text-white bg-white border-r border-gray-400 border-1 md:w-80 md:flex-shrink-0 md:flex md:flex-col md:items-center md:justify-evenly">
+                    <div className="p-4 py-6 text-white bg-white md:w-80 md:flex-shrink-0 md:flex md:flex-col md:items-center md:justify-evenly">
                         <img src="/login.svg" alt="" />
                     </div>
                     <div className="p-5 bg-white md:flex-1">

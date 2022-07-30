@@ -94,3 +94,6 @@ input:disabled {
 .show{
   display: flex;
 }
+label{
+  color: #1f2937;
+}
