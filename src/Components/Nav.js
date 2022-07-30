@@ -16,7 +16,6 @@ export default function Nav() {
 	else {
 		var buttonText = "Log out";
 	}
-
 	function HandleClick() {
 		if (!login) {
 			navigate("/");
@@ -39,7 +38,6 @@ export default function Nav() {
 						<span className="ml-3 text-xl"></span>
 					</div>
 					<nav className="flex flex-wrap items-center justify-center text-base md:ml-auto">
-						<Link to="/" className="px-3 py-1 mr-5 border-solid rounded hover:bg-gray-200 hover:text-gray-900">Home </Link>
 						<Link to="/form" className="px-3 py-1 mr-5 rounded hover:bg-gray-200 hover:text-gray-900">Fill Details</Link>
 						<Link to="/edit " className="px-3 py-1 mr-5 rounded hover:bg-gray-200 hover:text-gray-900">Edit Details</Link>
 					</nav>
