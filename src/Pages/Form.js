@@ -63,23 +63,23 @@ const Form = () => {
     <>
       <div className={`flex flex-col p-1 items-center min-h-screen bg-gray-100 sm:p-8 md:w-screen justify-evenly   `} >
         {/* Stepper Line */}
-        <div className='z-10 items-center justify-between hidden w-11/12 h-1 mx-auto mt-6 mb-24 bg-white rounded-md text-bg-gray-900 md:w-11/12 lg:w-full xl:w-10/12 2xl:w-6/12 2xsm:flex stepper-line '>
-          <div className='h-10 p-2 bg-white rounded-xl after:hidden lg:after:block md:h-16 aspect-square steps ' >
+        <div className='z-10 items-center justify-between hidden w-full h-1 mx-auto mt-6 mb-24 bg-white rounded-md text-bg-gray-900 md:w-full lg:w-full xl:w-11/12 2xl:w-8/12 2xsm:flex stepper-line '>
+          <div className='h-10 p-2 bg-white rounded-xl hover:after:block after:hidden lg:after:block md:h-16 aspect-square steps ' >
             <img className='m-0' alt='User' src={userIcon} />
           </div>
-          <div className='h-10 p-2 bg-white rounded-xl after:hidden lg:after:block md:h-16 aspect-square steps ' >
+          <div className='h-10 p-2 bg-white rounded-xl hover:after:block after:hidden lg:after:block md:h-16 aspect-square steps ' >
             <img src={ student } alt="student" />
           </div>
-          <div className='h-10 p-2 bg-white rounded-xl md:h-16 after:hidden lg:after:block aspect-square steps ' >
+          <div className='h-10 p-2 bg-white rounded-xl hover:after:block md:h-16 after:hidden lg:after:block aspect-square steps ' >
             <img className='m-0' alt='Form' src={document} />
           </div>
-          <div className='h-10 p-2 bg-white md:h-16 after:hidden lg:after:block rounded-xl aspect-square steps ' >
+          <div className='h-10 p-2 bg-white md:h-16 hover:after:block after:hidden lg:after:block rounded-xl aspect-square steps ' >
             <img alt='Qualification' src={certificate} />
           </div>
-          <div className='h-10 p-2 bg-white md:h-16 after:hidden lg:after:block rounded-xl aspect-square steps ' >
+          <div className='h-10 p-2 bg-white md:h-16 hover:after:block after:hidden lg:after:block rounded-xl aspect-square steps ' >
             <img alt='Qualification' src={book} />
           </div>
-          <div className='h-10 p-2 bg-white md:h-16 after:hidden lg:after:block rounded-xl aspect-square steps ' >
+          <div className='h-10 p-2 bg-white md:h-16 hover:after:block after:hidden lg:after:block rounded-xl aspect-square steps ' >
             <img alt='Sewa' src={wellFare} />
           </div>
 
@@ -785,7 +785,7 @@ const Form = () => {
           </div>
           <span className='m-auto mb-4 text-black'>
             <div className='flex justify-center'>
-              <Link to="p/edit" type="submit" className="flex px-6 py-2 text-lg font-semibold text-center text-white transition-colors duration-300 bg-blue-500 rounded-md shadow btns w-max hover:bg-blue-600 focus:outline-none focus:ring-blue-200 focus:ring-4">
+              <Link to="/edit" type="submit" className="flex px-6 py-2 text-lg font-semibold text-center text-white transition-colors duration-300 bg-blue-500 rounded-md shadow btns w-max hover:bg-blue-600 focus:outline-none focus:ring-blue-200 focus:ring-4">
                   Done
                 </Link>
             </div>
