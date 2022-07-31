@@ -70,7 +70,7 @@ const Form = () => {
     <>
       <div className={`flex flex-col p-1 items-center min-h-screen bg-gray-100 sm:p-8 md:w-screen justify-evenly   `} >
         {/* Stepper Line */}
-        <div className='z-10 items-center justify-between hidden w-full h-1 mx-auto mt-6 mb-24 bg-white rounded-md text-bg-gray-900 md:w-full lg:w-full xl:w-11/12 2xl:w-8/12 2xsm:flex stepper-line '>
+        <div className=' items-center justify-between hidden w-full h-1 mx-auto mt-6 mb-24 bg-white rounded-md text-bg-gray-900 md:w-full lg:w-full xl:w-11/12 2xl:w-8/12 2xsm:flex stepper-line '>
           <div className='h-10 p-2 bg-white rounded-xl hover:after:block after:hidden lg:after:block md:h-16 aspect-square steps ' >
             <img className='m-0' alt='User' src={userIcon} />
           </div>
